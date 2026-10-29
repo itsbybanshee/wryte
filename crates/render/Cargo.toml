@@ -1,0 +1,22 @@
+[package]
+name = "wryte-render"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Wryte rasteriser: pages and thumbnails from the layout display list (vello_cpu), PNG/JPEG export"
+
+[lints]
+workspace = true
+
+[dependencies]
+wryte-geom = { workspace = true, features = ["image"] }
+wryte-doc = { workspace = true }
+wryte-fonts = { workspace = true }
+wryte-layout = { workspace = true }
+wryte-metafile = { workspace = true }
+vello_cpu = { workspace = true }
+image = { workspace = true }
+log = { workspace = true }
+
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+vello_cpu = { workspace = true, features = ["multithreading"] }

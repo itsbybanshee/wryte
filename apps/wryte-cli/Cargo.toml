@@ -1,0 +1,23 @@
+[package]
+name = "wryte-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish = false
+description = "Wryte command line: convert, inspect, render, run commands, MCP server"
+
+[[bin]]
+name = "wryte-cli"
+path = "src/main.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+wryte-doc = { workspace = true }
+wryte-engine = { workspace = true }
+wryte-render = { workspace = true }
+wryte-mcp = { workspace = true }
+wryte-zotero = { workspace = true }
+serde_json = { workspace = true }
+sys-locale = "0.3"
