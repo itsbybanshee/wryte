@@ -142,7 +142,7 @@ pub struct UiState {
     pub print: print_page::PrintSettings,
     pub ribbon_collapsed: bool,
     /// The Wryte layout (a unified toolbar and the Format sidebar) instead of the ribbon.
-    /// Always on in the app; not saved, so an older saved "classic" choice is ignored.
+    /// Always on in the app. Not saved, so an older saved "classic" choice is ignored.
     #[serde(skip)]
     pub pages_style: bool,
     /// The Format sidebar is open (Wryte layout only).

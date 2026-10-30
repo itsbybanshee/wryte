@@ -34,6 +34,7 @@ with long documents.
 Under the toolbar there's a full word processor: styles, tables, headers and footers, footnotes,
 tables of contents, citations, track changes and comments, find and replace, spelling, and mail
 merge.
+
 ## Install
 
 1. Download **Wryte-v1.0.0-Windows-x64.zip** from the
