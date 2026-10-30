@@ -202,12 +202,6 @@ fn view_menu(ui: &mut Ui, app: &mut WordApp) {
     item(ui, app, "Two Pages", "view.multiplePages", json!({}));
     item(ui, app, "Focus", "view.focus", json!({}));
     item(ui, app, "Read Mode", "view.readMode", json!({}));
-    ui.separator();
-    let mut classic = !app.ui.pages_style;
-    if ui.checkbox(&mut classic, tl!("Classic Ribbon")).clicked() {
-        app.ui.pages_style = !classic;
-        ui.close();
-    }
 }
 
 fn zoom_percent(app: &WordApp) -> i32 {
