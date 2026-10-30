@@ -1,1 +1,6 @@
 craft-i18n.rev text eol=lf
+
+# Language stats: hyphenation patterns are data (GitHub reads .pat as Max), and
+# the packaging scripts are build helpers, not part of the app.
+assets/hyphenation/*.pat linguist-detectable=false
+packaging/** linguist-vendored
